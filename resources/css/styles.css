@@ -1,0 +1,53 @@
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    position: fixed;
+    column-width: 100vw;
+    text-shadow: 2px 2px #000000;
+    color: #FFFFFF;
+    background-color: burlywood;
+    width: auto;
+    padding-top: 15px;
+    padding-left: 15px; 
+    padding-bottom: 15px;
+    padding-right: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.showbutton{
+    position: fixed;
+    font-family: Helvetica;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 2px;
+    font-weight: bold;
+    right: 15px;
+    top: 5px;
+}
+
+.canvas{
+    position: absolute;
+}
+.button{
+    font-family: Helvetica;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+.lineModifier{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>free draw</title>
+    <!-- Bootstrap + JQuery + FontAwesome -->
+    <link rel="stylesheet" href="resources/vendor/bootstrap.min.css" />
+    <script src="resources/vendor/jquery-3.5.1.slim.min.js"></script>
+    <script src="resources/vendor/popper.min.js"></script>
+    <script src="resources/vendor/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="resources/vendor/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="resources/css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="head" id="head">
+            <div>
+                <h1>let inspiration guide you.</h1>
+                <h4>Click to draw.</h4>
+                <br>
+            </div>
+            <div>
+                <div>
+                    <button class="button" id="save" type="button">Save</button>
+                    <button class="button" id="load" type="button">Load</button>
+                    <button class="button" id="clear" type="button">Clear</button>
+                </div>
+                <br>
+                <label for="color">Color: </label>
+                <input class="lineModifier" type="color" id="color">
+                <label for="lineWidth">Line Width: </label>
+                <input class="lineModifier" id="lineWidth" type="range" min="1" max="100" value="10">
+                <button class="button" style="float: right;" id="hide" type="button">Hide</button>
+            </div>
+        </div>
+        <button class="showbutton" style="float: right;" id="show" type="button">Show</button>
+    </header>
+    <div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <!-- Our own Scripts -->
+    <script src="resources/js/index.js"></script>
+</body>
+
+</html>
